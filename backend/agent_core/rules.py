@@ -1,12 +1,6 @@
-import json
-import os
 from collections import Counter
-from typing import Any
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-ORDERS_FILE = os.path.join(DATA_DIR, "orders.json")
-PRODUCTS_FILE = os.path.join(DATA_DIR, "products.json")
-REVIEWS_FILE = os.path.join(DATA_DIR, "reviews.json")
+from . import repo
 
 CHILD_RATINGS = {"everyone", "everyone 10+"}
 ADULT_RATINGS = {"16+", "17+", "18+"}
@@ -14,23 +8,19 @@ ADULT_RATINGS = {"16+", "17+", "18+"}
 SPAM_URL_MARKERS = ("http", "www.", ".com", "dot example", "dot com")
 
 
-def _load_json(path: str) -> Any:
-    if not os.path.exists(path):
-        return []
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+def _as_int(n):
+    try:
+        return int(n) if float(n) == int(float(n)) else n
+    except (TypeError, ValueError):
+        return n
 
 
 def load_policy() -> dict:
-    data = _load_json(PRODUCTS_FILE)
-    if isinstance(data, dict):
-        return data.get("store_policy", {})
-    return {}
+    return repo.load_policy()
 
 
 def _console_ids() -> set:
-    data = _load_json(PRODUCTS_FILE)
-    products = data.get("products", []) if isinstance(data, dict) else []
+    products = repo.load_products()
     return {p["id"] for p in products if p.get("category") == "Consoles"}
 
 
@@ -38,11 +28,11 @@ def compute_order_flags(order: dict, policy: dict) -> list[str]:
     flags: list[str] = []
     items = order.get("items", [])
 
-    threshold = policy.get("suspicious_order_threshold", 500)
-    max_items = policy.get("max_items_per_order", 5)
-    max_same = policy.get("max_same_item", 2)
+    threshold = _as_int(policy.get("suspicious_order_threshold", 500))
+    max_items = _as_int(policy.get("max_items_per_order", 5))
+    max_same = _as_int(policy.get("max_same_item", 2))
 
-    total = order.get("total", 0)
+    total = _as_int(order.get("total", 0))
     item_count = order.get("item_count", sum(i.get("quantity", 0) for i in items))
 
     if total > threshold:
@@ -73,7 +63,7 @@ def compute_order_flags(order: dict, policy: dict) -> list[str]:
 
 
 def load_recent_overrides(limit: int = 8) -> str:
-    orders = _load_json(ORDERS_FILE)
+    orders = repo.load_orders()
     overrides = []
     for o in orders:
         analysis = o.get("ai_analysis") or {}
@@ -109,7 +99,7 @@ def review_first_pass(review: dict) -> list[str]:
     if any(marker in normalized for marker in SPAM_URL_MARKERS):
         flags.append("contains_link_or_promo")
 
-    reviews = _load_json(REVIEWS_FILE)
+    reviews = repo.load_reviews()
     own_id = review.get("id")
     stripped = " ".join(normalized.split())
     exact_duplicates = sum(
@@ -125,7 +115,7 @@ def review_first_pass(review: dict) -> list[str]:
 
 
 def reviewer_status(customer_name: str) -> str:
-    reviews = _load_json(REVIEWS_FILE)
+    reviews = repo.load_reviews()
     name = (customer_name or "").strip().lower()
     matches = [r for r in reviews if str(r.get("customer_name", "")).strip().lower() == name]
     if not matches:
