@@ -12,9 +12,9 @@ An explainable, agent driven operations layer for an online store. Two LangGraph
 
 ## Overview
 
-GameZone AI is a gaming store where the AI is not a decorative wrapper around a single model call. It is the operational core. Every order placed and every review submitted runs through a bounded reasoning loop that gathers evidence with tools, weighs it against store policy, and produces an auditable verdict for a human to confirm.
+GameZone AI is a full stack gaming store with an AI operations layer at its core. Every order placed and every review submitted runs through a bounded reasoning loop that gathers evidence with tools, weighs it against store policy, and produces an auditable verdict for a human admin to confirm.
 
-The project is built around one principle: Python computes the facts, and the language model judges their meaning. Policy thresholds, item counts, and age rating conflicts are calculated deterministically in code. Questions that require judgment, such as whether a cluster of orders looks like a fraud ring or whether a harsh review is abusive or merely critical, are left to the agent. This split is what makes the automation both reliable and genuinely intelligent.
+The system is built around one principle: Python computes the facts, and the language model judges their meaning. Policy thresholds, item counts, and age rating conflicts are calculated deterministically in code. Questions that require judgment, such as whether a cluster of orders looks like a fraud ring or whether a harsh review is abusive or merely critical, are handled by the agent. This split is what keeps the automation both reliable and genuinely useful.
 
 ## The Problem
 
