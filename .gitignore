@@ -1,0 +1,14 @@
+node_modules/
+.env
+__pycache__/
+backend/data/orders.json
+backend/data/reviews.json
+backend/data/activity.json
+backend/data/gamezone.db
+backend/data/invoices/
+backend/data/gamezone.db
+backend/data/invoices/
+backend/eval_report.json
+backend/__pycache__/
+backend/agent_core/__pycache__/
+backend/agent_core/tools/__pycache__/

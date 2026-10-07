@@ -1,0 +1,299 @@
+{
+  "products": [
+    {
+      "id": "CON-001",
+      "name": "PlayStation 5 Slim",
+      "brand": "Sony",
+      "category": "Consoles",
+      "price": 449,
+      "age_rating": "Everyone",
+      "image": "/images/CON-001.png",
+      "description": "Next-gen gaming console with ultra-high speed SSD, ray tracing, and 4K gaming support.",
+      "specs": {
+        "storage": "1TB SSD",
+        "resolution": "4K 120fps",
+        "drive": "Digital + Disc",
+        "connectivity": "Wi-Fi 6, Bluetooth 5.1"
+      },
+      "in_stock": true,
+      "rating": 4.8,
+      "review_count": 0
+    },
+    {
+      "id": "CON-002",
+      "name": "Xbox Series X",
+      "brand": "Microsoft",
+      "category": "Consoles",
+      "price": 499,
+      "age_rating": "Everyone",
+      "image": "/images/CON-002.png",
+      "description": "The fastest and most powerful Xbox ever with 12 teraflops of processing power.",
+      "specs": {
+        "storage": "1TB SSD",
+        "resolution": "4K 120fps / 8K",
+        "drive": "Disc + Digital",
+        "connectivity": "Wi-Fi 6, Bluetooth 5.0"
+      },
+      "in_stock": true,
+      "rating": 4.7,
+      "review_count": 0
+    },
+    {
+      "id": "CON-003",
+      "name": "Nintendo Switch OLED",
+      "brand": "Nintendo",
+      "category": "Consoles",
+      "price": 349,
+      "age_rating": "Everyone",
+      "image": "/images/CON-003.png",
+      "description": "Vibrant 7-inch OLED screen with wide adjustable stand and enhanced audio.",
+      "specs": {
+        "storage": "64GB",
+        "screen": "7-inch OLED",
+        "battery": "4.5-9 hours",
+        "modes": "TV, Tabletop, Handheld"
+      },
+      "in_stock": true,
+      "rating": 4.6,
+      "review_count": 0
+    },
+    {
+      "id": "ACC-001",
+      "name": "PS5 DualSense Controller",
+      "brand": "Sony",
+      "category": "Accessories",
+      "price": 69,
+      "age_rating": "Everyone",
+      "image": "/images/ACC-001.png",
+      "description": "Wireless controller with haptic feedback, adaptive triggers, and built-in microphone.",
+      "specs": {
+        "battery": "Up to 12 hours",
+        "connectivity": "Bluetooth 5.1, USB-C",
+        "features": "Haptic feedback, Adaptive triggers",
+        "colors": "White, Black, Red, Blue, Purple"
+      },
+      "in_stock": true,
+      "rating": 4.7,
+      "review_count": 0
+    },
+    {
+      "id": "ACC-002",
+      "name": "Xbox Elite Controller Series 2",
+      "brand": "Microsoft",
+      "category": "Accessories",
+      "price": 179,
+      "age_rating": "Everyone",
+      "image": "/images/ACC-002.png",
+      "description": "Pro-level controller with adjustable tension thumbsticks, wrap-around rubberized grip.",
+      "specs": {
+        "battery": "Up to 40 hours",
+        "connectivity": "Bluetooth, USB-C, Xbox Wireless",
+        "features": "Adjustable triggers, Swappable components",
+        "weight": "345g"
+      },
+      "in_stock": true,
+      "rating": 4.5,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-001",
+      "name": "God of War Ragnarok (PS5)",
+      "brand": "Sony",
+      "category": "Games",
+      "price": 59,
+      "age_rating": "17+",
+      "image": "/images/GAME-001.jpg",
+      "description": "Epic action-adventure game. Join Kratos and Atreus on a journey through the Nine Realms.",
+      "specs": {
+        "genre": "Action-Adventure",
+        "platform": "PS5",
+        "players": "Single Player",
+        "size": "90GB"
+      },
+      "in_stock": true,
+      "rating": 4.9,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-002",
+      "name": "GTA V Premium Edition (PS5)",
+      "brand": "Rockstar Games",
+      "category": "Games",
+      "price": 29,
+      "age_rating": "18+",
+      "image": "/images/GAME-002.webp",
+      "description": "Explore the sprawling city of Los Santos in this open-world action game.",
+      "specs": {
+        "genre": "Action-Adventure, Open World",
+        "platform": "PS5",
+        "players": "Single + Online Multiplayer",
+        "size": "95GB"
+      },
+      "in_stock": true,
+      "rating": 4.8,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-003",
+      "name": "EA Sports FC 25 (PS5)",
+      "brand": "EA Sports",
+      "category": "Games",
+      "price": 69,
+      "age_rating": "Everyone",
+      "image": "/images/GAME-003.webp",
+      "description": "The latest football simulation game with HyperMotion V technology and tactical innovations.",
+      "specs": {
+        "genre": "Sports, Football",
+        "platform": "PS5",
+        "players": "1-4 Local, Online",
+        "size": "50GB"
+      },
+      "in_stock": true,
+      "rating": 4.3,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-004",
+      "name": "Minecraft (Switch)",
+      "brand": "Mojang",
+      "category": "Games",
+      "price": 29,
+      "age_rating": "Everyone 10+",
+      "image": "/images/GAME-004.webp",
+      "description": "Build, explore, and survive in infinite worlds. The best-selling game of all time.",
+      "specs": {
+        "genre": "Sandbox, Survival",
+        "platform": "Nintendo Switch",
+        "players": "1-8 Multiplayer",
+        "size": "1GB"
+      },
+      "in_stock": true,
+      "rating": 4.7,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-005",
+      "name": "Call of Duty MW3 (Xbox)",
+      "brand": "Activision",
+      "category": "Games",
+      "price": 69,
+      "age_rating": "18+",
+      "image": "/images/GAME-005.jfif",
+      "description": "Fast-paced first-person shooter with campaign, multiplayer, and zombie modes.",
+      "specs": {
+        "genre": "FPS, Shooter",
+        "platform": "Xbox Series X/S",
+        "players": "Single + Online Multiplayer",
+        "size": "150GB"
+      },
+      "in_stock": true,
+      "rating": 4.2,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-006",
+      "name": "Mario Kart 8 Deluxe (Switch)",
+      "brand": "Nintendo",
+      "category": "Games",
+      "price": 59,
+      "age_rating": "Everyone",
+      "image": "/images/GAME-006.jfif",
+      "description": "Race your friends with 48 tracks and all DLC included. The ultimate kart racing game.",
+      "specs": {
+        "genre": "Racing",
+        "platform": "Nintendo Switch",
+        "players": "1-4 Local, 12 Online",
+        "size": "7GB"
+      },
+      "in_stock": true,
+      "rating": 4.8,
+      "review_count": 0
+    },
+    {
+      "id": "GAME-007",
+      "name": "Horizon Forbidden West (PS5)",
+      "brand": "Sony",
+      "category": "Games",
+      "price": 49,
+      "age_rating": "16+",
+      "image": "/images/GAME-007.jfif",
+      "description": "Explore distant lands and face new threats in this action RPG sequel.",
+      "specs": {
+        "genre": "Action RPG, Open World",
+        "platform": "PS5",
+        "players": "Single Player",
+        "size": "100GB"
+      },
+      "in_stock": false,
+      "rating": 4.6,
+      "review_count": 0
+    },
+    {
+      "id": "ACC-003",
+      "name": "HyperX Cloud III Gaming Headset",
+      "brand": "HyperX",
+      "category": "Accessories",
+      "price": 79,
+      "age_rating": "Everyone",
+      "image": "/images/ACC-003.webp",
+      "description": "Comfortable gaming headset with DTS Spatial Audio and noise-cancelling microphone.",
+      "specs": {
+        "driver": "53mm",
+        "frequency": "10Hz-21kHz",
+        "microphone": "Detachable noise-cancelling",
+        "compatibility": "PC, PS5, Xbox, Switch"
+      },
+      "in_stock": true,
+      "rating": 4.4,
+      "review_count": 0
+    },
+    {
+      "id": "ACC-004",
+      "name": "PlayStation HD Camera",
+      "brand": "Sony",
+      "category": "Accessories",
+      "price": 59,
+      "age_rating": "Everyone",
+      "image": "/images/ACC-004.png",
+      "description": "1080p dual-lens camera for PS5. Stream, video chat, and create content.",
+      "specs": {
+        "resolution": "1920x1080",
+        "lenses": "Dual wide-angle",
+        "features": "Background removal, Streaming",
+        "compatibility": "PS5 only"
+      },
+      "in_stock": true,
+      "rating": 4.1,
+      "review_count": 0
+    },
+    {
+      "id": "SUB-001",
+      "name": "Xbox Game Pass Ultimate 12 Month",
+      "brand": "Microsoft",
+      "category": "Subscriptions",
+      "price": 119,
+      "age_rating": "Everyone",
+      "image": "/images/SUB-001.jfif",
+      "description": "Access 400+ games on Xbox and PC. Includes EA Play, online multiplayer, and day-one releases.",
+      "specs": {
+        "duration": "12 months",
+        "games": "400+ titles",
+        "includes": "EA Play, Xbox Live Gold, Cloud Gaming",
+        "platforms": "Xbox, PC, Mobile (Cloud)"
+      },
+      "in_stock": true,
+      "rating": 4.9,
+      "review_count": 0
+    }
+  ],
+  "store_policy": {
+    "payment": "Cash on delivery only",
+    "shipping_cost": 5,
+    "free_shipping_over": 100,
+    "delivery_time": "2-5 business days",
+    "return_policy": "7-day return policy. Items must be sealed and unopened. Opened games cannot be returned.",
+    "suspicious_order_threshold": 500,
+    "max_items_per_order": 5,
+    "max_same_item": 2
+  }
+}
