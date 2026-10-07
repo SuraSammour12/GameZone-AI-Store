@@ -1,4 +1,4 @@
-# GameZone AI
+# 🎮 GameZone AI
 
 An explainable, agent driven operations layer for an online store. Two LangGraph agents sit behind a storefront and an admin console: one triages every order for fraud, the other moderates every customer review. Each decision is backed by a step by step reasoning trace, so a human admin can see exactly how and why the agent reached its conclusion.
 
